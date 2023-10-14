@@ -15,130 +15,221 @@ and be inspired, Educational programs">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo2.png"
+            
+            width="200px"
+            height="60px"
+          />
+        
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 7px;">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <li class="nav-item ml-auto " style="margin-left:40px ;">
+              <a class="nav-link active" aria-current="page" href="#">9108804375</a>
+            </li>
+            <li class="nav-item ml-auto " style="margin-left:10px ;">
+              <a class="nav-link active" aria-current="page" href="#">info@geturcollege.com</a>
+            </li>
+          
+            <li class="nav-item ml-auto " style="margin-left:10px ;">
+              <button type="button" class="btn btn-dark" href="">contact us</button>
+            </li>
+            <li class="nav-item ml-auto" style="margin-left:10px ;">
+              <button type="button" class="btn btn-success">Study Abroad</button>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     
     
     <style>
-      .custom-dropdown-toggle::after {
-        content: none;
-      }
-  
-      .dropdown-item {
-        width: 100%;
-        text-align: center;
-      }
-      a{
-        padding:0% 13% 0% 13%
-      }
-  
-      li {
-        padding: 2% 13% 2% 13%;
-        display: inline-block;
-        transition: background-color 0.2s, color 0.2s;
-        /* Add transition for smooth hover effect */
-      }
-  
-      .engineering-list-item:hover {
-        background-color: rgb(15, 169, 159);
-        color: rgb(11, 207, 135);
-        border-radius: 0.25rem;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-      }
-  
-      .dddd:hover {
-        background-color: rgb(15, 169, 159);
-        color: rgb(11, 207, 135);
-        border-radius: 0.25rem;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-      }
-  
-      .navbar-custom .navbar-text {
-        color: rgb(39, 193, 39);
-      }
-      .dropdown-item{
-        width: 150px;
-      }
+      #menu {
+      background: #181880;
+      background: linear-gradient(to bottom,  #030340,  #C975A5);
+      color: #FFF;
+      height: 79px;
+      padding-left: 18px;
+      border-radius: 0px;
+    }
+    #menu ul, #menu li {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none
+    }
+    #menu ul {
+      width: 100%;
+    }
+    #menu li {
+        
+      float: left;
+      display: inline;
+      position: relative;
+    }
+    #menu a {
+      display: block;
+      line-height: 79px;
+      padding: 0 58px;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    #menu a.dropdown-arrow:after {
+      content: "\2193";
+      margin-left: 5px;
+    }
+    #menu li a:hover {
+      color: black;
+      background: #F2F2F2;
+    }
+    #menu input {
+      display: none;
+      margin: 0;
+      padding: 0;
+      height: 79px;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer
+    }
+    #menu label {
+      display: none;
+      line-height: 79px;
+      text-align: center;
+      position: absolute;
+      left: 35px
+    }
+    #menu label:before {
+      font-size: 1.6em;
+      content: "\2261"; 
+      margin-left: 20px;
+    }
+    #menu ul.sub-menus{
+      height: auto;
+      overflow: hidden;
+      width: 240px;
+      background: #444444;
+      position: absolute;
+      z-index: 99;
+      display: none;
+    }
+    #menu ul.sub-menus li {
+      display: block;
+      width: 100%;
+    }
+    #menu ul.sub-menus a {
+      color: #FFFFFF;
+      font-size: 16px;
+    }
+    #menu li:hover ul.sub-menus {
+      display: block
+    }
+    #menu ul.sub-menus a:hover{
+      background: #F2F2F2;
+      color: #444444;
+    }
+    @media screen and (max-width: 800px){
+      #menu {position:relative}
+      #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+      #menu ul.sub-menus {width:100%;position:static;}
+      #menu ul.sub-menus a {padding-left:30px;}
+      #menu li {display:block;float:none;width:auto;}
+      #menu input, #menu label {position:absolute;top:0;left:0;display:block}
+      #menu input {z-index:4}
+      #menu input:checked + label {color:white}
+      #menu input:checked + label:before {content:"\00d7"}
+      #menu input:checked ~ ul {display:block}
+    }
+    
     </style>
+    
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='http:#'>Home</a></li>
+        <li><a class='dropdown-arrow' href='#'>Engineering</a>
+          <ul class='sub-menus'>
+            <li><a href='http:#'>clz 1</a></li>
+            <li><a href='http:#'>clz 2</a></li>
+            <li><a href='http:#'>clz 3</a></li>
+            <li><a href='http:#'>clz 4</a></li>
+          </ul>
+        </li>
+        <li><a href='http:#'>Physiotherapy</a></li>
+        <li><a href='http:#'>Pharmacy</a></li>
+        <li><a href='http:#'>MBBS</a></li>
+        <li><a href='http:#'>BDS</a></li>
+        <li><a href='http:#'>BHMS</a></li>
+      </ul>
+    </nav>
+    
+    
+
     <meta name="theme-color" content="#25797c">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" class="u-body u-xl-mode" data-lang="en">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom navbar-text">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse text-align" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown engineering-list-item text-align" onmouseenter="apple()">
-            <a class="nav-link custom-dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false"  id="mainbut" >Engineering</a>
-              
-            <ul class="dropdown-menu dark bg-dark text-align" style="text-decoration: none;" id="pads" >
-              
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another action</a></li>
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another </a></li>
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another action</a></li>
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another action</a></li>
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another action</a></li>
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another action</a></li>
-              <li><a class="dropdown-item dddd dark bg-dark" href="#">Another action</a></li>
-  
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Physiotherapy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pharmacy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MBBS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BDS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BHMS</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  
-    <script>
-  mylink = document.getElementById("mainbut")
-      myLink.addEventListener("click", (event) => {
-      event.preventDefault(); 
 
-  });
-      const engineeringDropdown = document.querySelector('.engineering-list-item');
-      const padss = document.querySelector('#pads');
-      function apple(){
-        document.getElementById('mainbut').click()
-      }
-      
-  
-  
-      
-    
-    </script>
-    <section class="u-align-center u-clearfix u-valign-middle u-section-1" id="sec-e351">
-      <div id="carousel-ad4f" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
+
+
+
+
+
+
+
+
+
+    <section class="u-align-center u-clearfix u-section-1" id="sec-e351">
+      <div id="carousel-c2d0" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
         <ol class="u-absolute-hcenter u-carousel-indicators u-hidden u-carousel-indicators-1">
-          <li data-u-target="#carousel-ad4f" class="u-active u-grey-30" data-u-slide-to="0"></li>
-          <li data-u-target="#carousel-ad4f" class="u-grey-30" data-u-slide-to="1"></li>
-          <li data-u-target="#carousel-ad4f" class="u-grey-30" data-u-slide-to="2"></li>
+          <li data-u-target="#carousel-c2d0" class="u-active u-grey-30" data-u-slide-to="0"></li>
+          <li data-u-target="#carousel-c2d0" class="u-grey-30" data-u-slide-to="1"></li>
+          <li data-u-target="#carousel-c2d0" class="u-grey-30" data-u-slide-to="2"></li>
         </ol>
         <div class="u-carousel-inner" role="listbox">
           <div class="u-active u-align-center u-carousel-item u-container-style u-image u-shading u-slide u-image-1" data-image-width="250" data-image-height="167">
-            <div class="u-container-layout u-container-layout-1">
+            <div class="u-container-layout u-valign-bottom-sm u-container-layout-1">
               <h2 class="u-custom-font u-font-merriweather u-text u-text-palette-4-light-2 u-text-1">&nbsp;"Learning Never Exhausts The Mind"<br>
               </h2>
               <a href="https://nicepage.com/k/auto-mechanic-html-templates" class="u-align-left u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-text-active-palette-1-base u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">contact us</a>
@@ -151,19 +242,19 @@ and be inspired, Educational programs">
             </div>
           </div>
           <div class="u-carousel-item u-container-style u-expanded-width u-image u-slide u-image-3" data-image-width="6000" data-image-height="4000">
-            <div class="u-container-layout u-valign-bottom-xs u-container-layout-3">
-              <h1 class="u-custom-font u-font-merriweather u-text u-text-black u-text-3"> "College is not just about preparing for a job; it's about preparing for life."</h1>
+            <div class="u-container-layout u-container-layout-3">
+              <h1 class="u-custom-font u-font-merriweather u-text u-text-body-alt-color u-text-3"> "College is not just about preparing for a job; it's about preparing for life."</h1>
             </div>
           </div>
         </div>
-        <a class="u-absolute-vcenter-lg u-absolute-vcenter-md u-absolute-vcenter-sm u-absolute-vcenter-xs u-carousel-control u-carousel-control-prev u-spacing-9 u-carousel-control-1" href="#carousel-ad4f" role="button" data-u-slide="prev">
+        <a class="u-absolute-vcenter-lg u-absolute-vcenter-md u-absolute-vcenter-sm u-absolute-vcenter-xs u-carousel-control u-carousel-control-prev u-spacing-9 u-carousel-control-1" href="#carousel-c2d0" role="button" data-u-slide="prev">
           <span aria-hidden="true">
             <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
                     c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
           </span>
           <span class="sr-only">+Previous</span>
         </a>
-        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-spacing-9 u-carousel-control-2" href="#carousel-ad4f" role="button" data-u-slide="next">
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-spacing-9 u-carousel-control-2" href="#carousel-c2d0" role="button" data-u-slide="next">
           <span aria-hidden="true">
             <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
                     c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
@@ -291,7 +382,7 @@ and be inspired, Educational programs">
         <img class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" src="images/308.jpg" alt="" data-image-width="1712" data-image-height="1544">
       </div>
     </section>
-    <section class="u-clearfix u-section-3" id="sec-ce07">
+    <section class="u-clearfix u-gradient u-section-3" id="sec-ce07">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-custom-font u-font-merriweather u-text u-text-default-xl u-text-1"> Why Choose US?</h1>
         <p class="u-align-center-xs u-text u-text-2">
@@ -313,13 +404,13 @@ and be inspired, Educational programs">
                     <div class="u-layout-row">
                       <div class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                         <div class="u-container-layout u-container-layout-2">
-                          <h3 class="u-text u-text-palette-4-base u-text-3">You have more than one reason!</h3>
+                          <h3 class="u-text u-text-3">You have more than one reason!</h3>
                         </div>
                       </div>
                       <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-3">
-                        <div class="u-container-layout u-container-layout-3">
+                        <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
                           <h4 class="u-custom-font u-font-merriweather u-text u-text-4">Every Single Deet at One Place</h4>
-                          <p class="u-text u-text-palette-3-base u-text-5">
+                          <p class="u-text u-text-body-alt-color u-text-5">
                             <br>You need not visit websites of multiple colleges or remain on call for long hours, you can easily find every bit of information on our website.
                           </p>
                         </div>
@@ -329,15 +420,15 @@ and be inspired, Educational programs">
                   <div class="u-size-30">
                     <div class="u-layout-row">
                       <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-4">
-                        <div class="u-container-layout u-container-layout-4">
+                        <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-container-layout-4">
                           <h3 class="u-custom-font u-font-merriweather u-text u-text-6"> Access To Updated Information</h3>
-                          <p class="u-text u-text-palette-3-base u-text-7"> Our website carries updated and renewed information to help you understand the intricacy of college without giving a visit.</p>
+                          <p class="u-text u-text-white u-text-7"> Our website carries updated and renewed information to help you understand the intricacy of college without giving a visit.</p>
                         </div>
                       </div>
                       <div class="u-container-style u-grey-10 u-layout-cell u-right-cell u-size-30 u-layout-cell-5">
-                        <div class="u-container-layout u-container-layout-5">
+                        <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-5">
                           <h3 class="u-align-left u-custom-font u-font-merriweather u-text u-text-8"> Get Immediate Assistance In Case Of Doubts</h3>
-                          <p class="u-align-center u-text u-text-palette-3-base u-text-9"> The experts at Geturcollege are 24/7 available to help you get out of any sort of problem, or doubts.</p>
+                          <p class="u-align-center u-text u-text-9"> The experts at Geturcollege are 24/7 available to help you get out of any sort of problem, or doubts.</p>
                         </div>
                       </div>
                     </div>
@@ -432,7 +523,52 @@ c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg></span>
         <p class="u-align-center u-text u-text-4">@All Rights Reserved By|Geturcollege</p>
       </div>
     </section>
- 
+    <section class="u-clearfix u-container-align-center u-section-6" id="carousel_eb6d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-align-center u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <h4 class="u-align-center u-text u-text-1">Contact Us</h4>
+                  <p class="u-align-center u-text u-text-default u-text-2"> Dignissim sodales ut eu sem. Amet luctus venenatis lectus magna.</p>
+                  <div class="u-align-center-sm u-align-center-xs u-form u-form-1">
+                    <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 0px;">
+                      <div class="u-form-email u-form-group u-label-none">
+                        <label for="email-5b2e" class="u-label">Email</label>
+                        <input type="email" placeholder="Enter a valid email address" id="email-5b2e" name="email" class="u-grey-10 u-input u-input-rectangle u-radius-20 u-input-1" required="" wfd-id="id1102">
+                      </div>
+                      <div class="u-align-left u-form-group u-form-submit u-label-none">
+                        <a href="#" class="u-active-palette-1-dark-2 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-2 u-radius-20 u-btn-1">Submit</a>
+                        <input type="submit" value="submit" class="u-form-control-hidden" wfd-id="id1103">
+                      </div>
+                      <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                      <input type="hidden" value="" name="recaptchaResponse" wfd-id="id1104">
+                      <input type="hidden" name="formServices" value="5f2b5754-0cf5-183b-7447-a0f8b5017b70">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-animation-direction="">
+                <div class="u-container-layout u-valign-top u-container-layout-2"><span class="u-align-center u-file-icon u-icon u-icon-1"><img src="images/733585.png" alt=""></span>
+                  <h4 class="u-align-center u-text u-text-3"> Whatsapp Support</h4>
+                  <p class="u-align-center u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-4"> Add us on WhatsApp &amp; send queries for instant reply.</p>
+                  <a href="tel:+12-345-678-89089" class="u-active-palette-1-dark-2 u-align-center u-border-active-palette-2-light-2 u-border-hover-palette-2-light-2 u-border-none u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom u-hover-palette-1-dark-2 u-palette-1-base u-radius-19 u-text-active-white u-text-hover-white u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">+12-345-678-89089</a>
+                </div>
+              </div>
+              <div class="cell-temp-clone u-container-align-center u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                <div class="u-container-layout u-valign-top u-container-layout-3"><span class="u-align-center u-file-icon u-icon u-text-palette-1-light-1 u-icon-2"><img src="images/684849-9e33152a.png" alt=""></span>
+                  <h4 class="u-align-center u-text u-text-5"> Live Chat</h4>
+                  <p class="u-align-center u-text u-text-6"> The fastest way to get in touch with an Expert</p>
+                  <a href="tel:+12-345-678-89089" class="u-active-palette-1-dark-2 u-align-center u-border-active-palette-2-light-2 u-border-hover-palette-2-light-2 u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom u-hover-palette-1-dark-2 u-palette-1-base u-radius-20 u-text-active-white u-text-hover-white u-btn-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Live chart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     
     
